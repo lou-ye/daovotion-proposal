@@ -1,6 +1,6 @@
 <style>
     .Interaction {
-        margin-top: 40%;
+        margin-top: 35%;
         width: 100%;
         display: inline-flex;
         justify-content: center;
