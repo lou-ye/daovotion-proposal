@@ -1,6 +1,8 @@
 <script>
     import Interaction from "./Interaction.svelte";
     import Project from "./Project.svelte";
+    import {link} from 'svelte-spa-router'
+
 </script>
 
 <style>
@@ -28,23 +30,22 @@
         font-weight: 700;
     }
 
-    .Main-section-description button {
-        width: 150px;
+    .Main-section-description p {
+        margin-bottom: 40px;
+    }
+
+    .Main-section-description a {
+        text-decoration: none;
+        width: auto;
         height: 50px;
         padding: 10px 20px;
-        text-align: center;
-        display: inline-block;
         font-size: 1.2rem;
         font-weight: 1000;
         color: darkcyan;
         background-color: white;
         border: 3px solid darkcyan;
         border-radius: 50px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         font-family: 'Inter', sans-serif;
-        margin-top: 30px;
     }
 
     .Main-section-projects {
@@ -78,7 +79,8 @@
             <h1>DAOVOTION</h1>
             <h3>Apoya el financiamiento del OSS y gana dinero en el Metaverso.</h3>
             <p>DAOVOTION es una plataforma de organizaciones decentralizadas (DAO), que gestiona el recaudo para proyectos de Software Libre (FOSS), mediante la venta de tierras ligadas al Metaverso Abierto: Las Meta Islas.</p>
-            <button>Saber mas</button>
+            <a href="/governance/" use:link>Saber mas</a>
+            <!-- <a href="/projects/" use:link>Explorar proyectos</a> -->
         </div>
         <div class="Main-section-projects">
             <Project />

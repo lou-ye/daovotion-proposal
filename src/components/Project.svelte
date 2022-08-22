@@ -1,6 +1,13 @@
 <script>
-    let ProjectLogo = "https://imgs.search.brave.com/2qsV1m3NAbyCkQKYdO0tbd4rOK-bUydTX5DWb8KqcpI/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5n/eGxsVDBmTHlhTzF6/bkxoSGNwa0ZnSGFF/SyZwaWQ9QXBp";
     let IslaImg = "https://imgs.search.brave.com/MkwMi69Ql_OzTWY5CRWgVlR0k6brPhmKAmQUE2PSB9o/rs:fit:711:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5J/SzBkUjg3YU92MGIx/SHl4TnZsNG1nSGFF/OCZwaWQ9QXBp";
+    
+    export let name;
+    export let description;
+    export let logo;
+    export let url;
+    export let score;
+    export let funds;
+    export let price;
 </script>
 
 <style>
@@ -116,29 +123,27 @@
     <div>
         <div class="Project-info">
             <div class="Project-info-header">
-                <img class="Project-img" src={ProjectLogo} alt="Project img">
-                <h1>Project-title</h1>
+                <img class="Project-img" src={logo} alt="Project img">
+                <h1>{name}</h1>
             </div>
-            <p class="Project-description">Project-description lallallalalalallalallalalallalalallalalallaljkbjhdjasjcljVH DSCLvsbd cLSjHVDASJHXBLCDJSAHLBHASBLHLBdvscbl svdlbhzjxcjblvsjldlbvldshlhj</p>
-            <a class="Project-repository" href="__blank">
-                https://github.com/project
-            </a>
+            <p class="Project-description">{description}</p>
+            <a class="Project-repository" href="__blank">{url}</a>
         </div>
         <div class="Project-balance">
             <div class="Project-prestige-icon">
                 <i class="fa-solid fa-star"></i>
-                <h2>55</h2>
+                <h2>{score}</h2>
             </div>
             <div class="Project-funds-icon">
                 <i class="fa-solid fa-coins"></i>
-                <h2>$5000</h2>
+                <h2>${funds}</h2>
             </div>
         </div>
         <div class="Project-land">
             <h3>¡Apoya este proyecto!</h3>
             <div class="Project-land-icon">
                 <img src={IslaImg} alt="Isla">
-                <h2>$50</h2>
+                <h2>{price}</h2>
             </div>
             <button class="Project-land-button">Comprar</button>
         </div>

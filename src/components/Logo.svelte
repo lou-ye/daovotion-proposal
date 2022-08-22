@@ -1,4 +1,6 @@
 <script>
+    import {link} from 'svelte-spa-router';
+    
     let DaovotionLogo = "https://nebairevelations.com/wp-content/uploads/2021/08/penrose_triangle_web.svg";
 </script>
 
@@ -14,5 +16,7 @@
 </style>
 
 <div class="Logo">
-    <img class="Logo-img" src={DaovotionLogo} alt="Daovotion Logo">
+    <a a href="/" use:link>
+        <img class="Logo-img" src={DaovotionLogo} alt="Daovotion Logo">
+    </a>
 </div>

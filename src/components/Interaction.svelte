@@ -1,3 +1,7 @@
+<script>
+    import {link} from 'svelte-spa-router';
+</script>
+
 <style>
     .Interaction {
         margin-top: 35%;
@@ -8,16 +12,15 @@
 
     .Interaction div {
         width: 350px;
-        height: auto;
+        height: 350px;
         border-style: outset;
-        /* border: 3px solid #DCDCDC;
-        border-radius: 10px; */
         padding: 10px;
         text-align: center;
         margin: 0% 5%;
     }
 
-    .Interaction button {
+    .Interaction a {
+        text-decoration: none;
         height: auto;
         height: 50px;
         border: none;
@@ -29,20 +32,21 @@
         color: white;
         font-family: 'Inter', sans-serif;
         font-weight: bold;
+        margin-bottom: 10%;
     }
 </style>
 
 <div class="Interaction">
     <div class="Interaction-support-project">
-        <h1>¡Se pionero!</h1>
-        <h3>Adquiere planetas con el mejor precio</h3>
+        <h2>¡Se pionero!</h2>
+        <h3>Adquiere planetas al mejor precio</h3>
         <p>Apoyando proyectos novedosos tendrás la oportunidad de ganar comisiones por la futura venta tus MetaIslas.</p>
-        <button>Explorar proyectos</button>
+        <a href="/projects/" use:link>Explorar proyectos</a>
     </div>
     <div class="Interaction-create-project">
         <h2>Crea tu proyecto</h2>
         <h3>¡Nace una Estrella! <br> Se fundador de tu sistema planetario</h3>
         <p>Desarrollas Software Libre? Creas contenido digital? Crea comunidad con el impacto de tu idea creativa.</p>
-        <button>Crear proyecto</button>
+        <a a href="/create_project/" use:link>Crear proyecto</a>
     </div>
 </div>
