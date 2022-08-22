@@ -1,11 +1,12 @@
 <script>
+    import Interaction from "./Interaction.svelte";
     import Project from "./Project.svelte";
 </script>
 
 <style>
     .Main {
         width: 100%;
-        height: 500px;
+        height: auto;
         font-size: 1.3rem;
         position: relative;
     }
@@ -86,4 +87,5 @@
             </button>
         </div>
     </section>
+    <Interaction />
 </div>

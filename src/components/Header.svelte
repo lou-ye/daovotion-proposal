@@ -1,5 +1,5 @@
 <script>
-    import Icon from "./Icon.svelte";
+    import Logo from "./Logo.svelte";
     import NavBar from "./NavBar.svelte";
     import Language from "./Language.svelte";
     import Profile from "./Profile.svelte";
@@ -16,7 +16,7 @@
 
 <div class="Header">
     <header class="Header-content">
-        <Icon />
+        <Logo />
         <NavBar />
         <Language />
         <Profile />
