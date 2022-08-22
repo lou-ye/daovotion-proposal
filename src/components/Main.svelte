@@ -1,3 +1,7 @@
+<script>
+    import Project from "./Project.svelte";
+</script>
+
 <style>
     .Main {
         width: 100%;
@@ -42,14 +46,29 @@
         margin-top: 30px;
     }
 
-    .Main-section-img {
+    .Main-section-projects {
         position: absolute;
         width: 400px;
         height: 100%;
-        background-color: darkcyan;
         margin-left: 1000px;
+        display: flex;
     }
 
+    .Main-section-projects-button {
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        color: darkcyan;
+        background-color: white;
+        border: 1px solid darkcyan;
+        border-radius: 50px;
+        margin-top: 60%;
+        margin-left: 5%;
+    }
+
+    .Main-section-projects-button i {
+        font-size: 1.5rem;
+    }
 </style>
 
 <div class="Main">
@@ -60,21 +79,11 @@
             <p>DAOVOTION es una plataforma de organizaciones decentralizadas (DAO), que gestiona el recaudo para proyectos de Software Libre (FOSS), mediante la venta de tierras ligadas al Metaverso Abierto: Las Meta Islas.</p>
             <button>Saber mas</button>
         </div>
-        <div class="Main-section-img">
+        <div class="Main-section-projects">
+            <Project />
+            <button class="Main-section-projects-button">
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
         </div>
-        <!-- <div>
-            <div>
-                <h1>DAOVOTION</h1>
-                <h3>Apoya el financiamiento del OSS y gana dinero en el Metaverso</h3>
-                <p>DAOVOTION es una plataforma de organizaciones decentralizadas (DAO), que gestiona el recaudo para proyectos de Software Libre (FOSS), mediante la venta de tierras ligadas al Metaverso Abierto: Las Meta Islas.</p>
-                <button>adqueri planete</button>
-            </div>
-            <div>
-                <h1>DAOVOTION</h1>
-                <h3>Apoya el financiamiento del OSS y gana dinero en el Metaverso</h3>
-                <p>DAOVOTION es una plataforma de organizaciones decentralizadas (DAO), que gestiona el recaudo para proyectos de Software Libre (FOSS), mediante la venta de tierras ligadas al Metaverso Abierto: Las Meta Islas.</p>
-                <button>crea proyecto</button>
-            </div>
-        </div> -->
     </section>
 </div>
