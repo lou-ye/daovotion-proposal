@@ -4,7 +4,7 @@
 
 <style>
     .Interaction {
-        margin-top: 35%;
+        margin-top: 40%;
         width: 100%;
         display: inline-flex;
         justify-content: center;

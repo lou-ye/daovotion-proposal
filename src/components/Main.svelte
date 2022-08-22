@@ -2,7 +2,7 @@
     import Interaction from "./Interaction.svelte";
     import Project from "./Project.svelte";
     import {link} from 'svelte-spa-router'
-
+    import Carrousel from './Carousel.svelte';
 </script>
 
 <style>
@@ -52,7 +52,7 @@
         position: absolute;
         width: 400px;
         height: 100%;
-        margin-left: 1000px;
+        margin-left: 75%;
         display: flex;
     }
 
@@ -65,7 +65,7 @@
         border: 1px solid darkcyan;
         border-radius: 50px;
         margin-top: 60%;
-        margin-left: 5%;
+        margin-left: 50%;
     }
 
     .Main-section-projects-button i {
@@ -83,10 +83,7 @@
             <!-- <a href="/projects/" use:link>Explorar proyectos</a> -->
         </div>
         <div class="Main-section-projects">
-            <Project />
-            <button class="Main-section-projects-button">
-                <i class="fa-solid fa-arrow-right"></i>
-            </button>
+            <Carrousel />
         </div>
     </section>
     <Interaction />
