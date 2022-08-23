@@ -3,21 +3,7 @@
     import Header from "../components/Header.svelte";
     import Project from "../components/Project.svelte";
     import { writable, derived } from 'svelte/store';
-
-    let projects = [
-        { name: 'Proyecto 43', description: 'fwcdSEVFWEDvwefsdcjvhvC' , logo: "https://imgs.search.brave.com/2qsV1m3NAbyCkQKYdO0tbd4rOK-bUydTX5DWb8KqcpI/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5n/eGxsVDBmTHlhTzF6/bkxoSGNwa0ZnSGFF/SyZwaWQ9QXBp", url: "www.github.com.ar", score: 45, funds: 3000, price: 34},
-        { name: 'Proyecto 1', description: 'fwcdSEVFWEDvwefsdcjvhvC' , logo: "https://imgs.search.brave.com/2qsV1m3NAbyCkQKYdO0tbd4rOK-bUydTX5DWb8KqcpI/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5n/eGxsVDBmTHlhTzF6/bkxoSGNwa0ZnSGFF/SyZwaWQ9QXBp", url: "www.github.com.ar", score: 45, funds: 3000, price: 34},
-        { name: 'Proyecto 1', description: 'fwcdSEVFWEDvwefsdcjvhvC' , logo: "https://imgs.search.brave.com/2qsV1m3NAbyCkQKYdO0tbd4rOK-bUydTX5DWb8KqcpI/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5n/eGxsVDBmTHlhTzF6/bkxoSGNwa0ZnSGFF/SyZwaWQ9QXBp", url: "www.github.com.ar", score: 45, funds: 3000, price: 34},
-        { name: 'Proyecto 1', description: 'fwcdSEVFWEDvwefsdcjvhvC' , logo: "https://imgs.search.brave.com/2qsV1m3NAbyCkQKYdO0tbd4rOK-bUydTX5DWb8KqcpI/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5n/eGxsVDBmTHlhTzF6/bkxoSGNwa0ZnSGFF/SyZwaWQ9QXBp", url: "www.github.com.ar", score: 45, funds: 3000, price: 34},
-        { name: 'Proyecto 1', description: 'fwcdSEVFWEDvwefsdcjvhvC' , logo: "https://imgs.search.brave.com/2qsV1m3NAbyCkQKYdO0tbd4rOK-bUydTX5DWb8KqcpI/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5n/eGxsVDBmTHlhTzF6/bkxoSGNwa0ZnSGFF/SyZwaWQ9QXBp", url: "www.github.com.ar", score: 45, funds: 3000, price: 34},
-        { name: 'Proyecto 1', description: 'fwcdSEVFWEDvwefsdcjvhvC' , logo: "https://imgs.search.brave.com/2qsV1m3NAbyCkQKYdO0tbd4rOK-bUydTX5DWb8KqcpI/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5n/eGxsVDBmTHlhTzF6/bkxoSGNwa0ZnSGFF/SyZwaWQ9QXBp", url: "www.github.com.ar", score: 45, funds: 3000, price: 34},
-        { name: 'Proyecto 41', description: 'fwcdSEVFW51EDvwefsdcjvhvC' , logo: "https://imgs.search.brave.com/2qsV1m3NAbyCkQKYdO0tbd4rOK-bUydTX5DWb8KqcpI/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5n/eGxsVDBmTHlhTzF6/bkxoSGNwa0ZnSGFF/SyZwaWQ9QXBp", url: "www.github.com.ar", score: 45, funds: 3000, price: 34},
-        { name: 'Proyecto 1', description: 'fwcdSEVFWEDvwefsdcjvhvC' , logo: "https://imgs.search.brave.com/2qsV1m3NAbyCkQKYdO0tbd4rOK-bUydTX5DWb8KqcpI/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5n/eGxsVDBmTHlhTzF6/bkxoSGNwa0ZnSGFF/SyZwaWQ9QXBp", url: "www.github.com.ar", score: 45, funds: 3000, price: 34},
-        { name: 'Proyecto 1', description: 'fwcdSEVFWEDvwefsdcjvhvC' , logo: "https://imgs.search.brave.com/2qsV1m3NAbyCkQKYdO0tbd4rOK-bUydTX5DWb8KqcpI/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5n/eGxsVDBmTHlhTzF6/bkxoSGNwa0ZnSGFF/SyZwaWQ9QXBp", url: "www.github.com.ar", score: 45, funds: 3000, price: 34},
-        { name: 'Proyecto 1', description: 'fwcdSEVFWEDvwefsdcjvhvC' , logo: "https://imgs.search.brave.com/2qsV1m3NAbyCkQKYdO0tbd4rOK-bUydTX5DWb8KqcpI/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5n/eGxsVDBmTHlhTzF6/bkxoSGNwa0ZnSGFF/SyZwaWQ9QXBp", url: "www.github.com.ar", score: 45, funds: 3000, price: 34},
-        { name: 'Proyecto 1', description: 'fwcdSEVFWEDvwefsdcjvhvC' , logo: "https://imgs.search.brave.com/2qsV1m3NAbyCkQKYdO0tbd4rOK-bUydTX5DWb8KqcpI/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5n/eGxsVDBmTHlhTzF6/bkxoSGNwa0ZnSGFF/SyZwaWQ9QXBp", url: "www.github.com.ar", score: 45, funds: 3000, price: 34},
-    ];
-
+    import { projects } from "../store/Projects";
 
     let term = writable('');
     let items = writable(projects);

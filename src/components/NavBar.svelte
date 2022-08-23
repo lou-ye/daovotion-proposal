@@ -21,6 +21,8 @@
     .NavBar-ul-li a {
         color: white;
         text-decoration: none;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #66ff99;
     }
 
     .NavBar-ul-li a:hover {

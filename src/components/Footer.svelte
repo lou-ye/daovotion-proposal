@@ -9,8 +9,8 @@
         height: auto;
         display: flex;
         justify-content: space-evenly;
-        padding-top: 50px;
         color: white;
+        padding-top: 50px;
     }
 
     .Footer div {
@@ -25,6 +25,7 @@
 
     .Footer h5 {
         text-align: start;
+        color: white;
     }
 
     .Footer ul {
@@ -49,6 +50,9 @@
         text-decoration: none;
         color: white;
         display: flex;
+        padding-left: 10px;
+        border-left: 1px solid #66ff99;
+        border-bottom: 1px solid #66ff99;
     }
 
     .Footer a:hover {

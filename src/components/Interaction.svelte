@@ -28,6 +28,7 @@
         border: none;
         padding: 10px 15px;
         text-align: center;
+        font: bold;
         font-size: 1rem;
         background-color: #66ff99;
         border-radius: 50px;
