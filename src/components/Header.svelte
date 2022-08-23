@@ -7,6 +7,9 @@
 
 <style>
     .Header-content {
+        width: 100%;
+        background-color: black;
+        color: white;
         padding: 10px;
         display: flex;
         align-items: center;

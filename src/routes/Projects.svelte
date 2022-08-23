@@ -27,14 +27,17 @@
 </script>
 
 <style>
+    .Projects {
+        color: white;
+        background-color: black;
+    }
+
     .Projects-search {
         width: 400px;
         height: auto;
         padding: 10px 20px;
         display: flex;
-        color: darkcyan;
-        background-color: white;
-        border: 3px solid darkcyan;
+        border: 2px solid #66ff99;
         border-radius: 30px;
         font-family: 'Inter', sans-serif;
         margin-top: 30px;
@@ -42,6 +45,8 @@
     }
 
     .Projects-search i {
+        font-size: 1rem;
+        color: #66ff99;
         margin-right: 5%;
     }
 
@@ -49,6 +54,8 @@
         border: 0;
         outline: 0;
         font-size: 1rem;
+        background-color: black;
+        color: white;
     }
 
     .Projects-list {

@@ -11,12 +11,12 @@
         text-align: center;
         display: inline-block;
         font-size: 1rem;
-        background-color: darkcyan;
+        background-color: #66ff99;
         border-radius: 50px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        color: white;
+        color: black;
     }
 
     p {

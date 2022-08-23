@@ -4,27 +4,26 @@
 
 <style>
     .Footer {
-        background-color: #F5F5F5;
+        background-color: black;
         width: 100%;
         height: auto;
         display: flex;
         justify-content: space-evenly;
-        margin-top: 50px;
-        padding: 10px;
+        padding-top: 50px;
+        color: white;
     }
 
     .Footer div {
-        margin-right: 200px;
         width: 20%;
         text-align: center;
         width: 20%;
     }
 
     .Footer-logo {
-        margin-top: 20px;
+        margin-top: 50px;
     }
 
-    .Footer h3 {
+    .Footer h5 {
         text-align: start;
     }
 
@@ -37,6 +36,7 @@
         display: flex;
         list-style: none;
         margin-bottom: 20px;
+        font-size: 1rem;
     }
 
     .Footer i {
@@ -47,11 +47,12 @@
     .Footer a {
         text-align: center;
         text-decoration: none;
-        color: black;
+        color: white;
+        display: flex;
     }
 
     .Footer a:hover {
-        color: darkcyan;
+        color: #66ff99;
     }
 </style>
 
@@ -60,11 +61,11 @@
         <Logo />
     </div>
     <div>
-        <h3>Contacto</h3>
+        <h5>Contacto</h5>
         <ul>
             <li>
                 <i class="fa-solid fa-location-dot"></i>
-                Colombia
+                Colombia, Bogotá.
             </li>
             <li>
                 <i class="fa-solid fa-envelope"></i>
@@ -73,7 +74,7 @@
         </ul>
     </div>
     <div>
-        <h3>Informacion</h3>
+        <h5>Informacion</h5>
         <ul>
             <li><a href="__blank">Whitepaper</a></li>
             <li><a href="__blank">FAQs</a></li>
@@ -81,7 +82,7 @@
         </ul>
     </div>
     <div>
-        <h3>Redes</h3>
+        <h5>Redes</h5>
         <ul>
             <li><a href="__blank">Discord</a></li>
             <li><a href="__blank">Telegram</a></li>

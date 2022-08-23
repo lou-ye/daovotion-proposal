@@ -8,12 +8,14 @@
         width: 100%;
         display: inline-flex;
         justify-content: center;
+        color: white;
     }
 
     .Interaction div {
         width: 350px;
         height: 350px;
-        border-style: outset;
+        border: 1px solid #66ff99;
+        border-radius: 10px;
         padding: 10px;
         text-align: center;
         margin: 0% 5%;
@@ -27,9 +29,9 @@
         padding: 10px 15px;
         text-align: center;
         font-size: 1rem;
-        background-color: darkcyan;
+        background-color: #66ff99;
         border-radius: 50px;
-        color: white;
+        color: black;
         font-family: 'Inter', sans-serif;
         font-weight: bold;
         margin-bottom: 10%;

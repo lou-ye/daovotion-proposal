@@ -5,6 +5,7 @@
 <style>
     .NavBar {
         margin-left: 100px;
+        background-color: black;
     }
 
     .NavBar-ul {
@@ -18,12 +19,12 @@
     }
 
     .NavBar-ul-li a {
-        color: black;
+        color: white;
         text-decoration: none;
     }
 
     .NavBar-ul-li a:hover {
-        color: darkcyan;
+        color: #66ff99;
     }
 </style>
 

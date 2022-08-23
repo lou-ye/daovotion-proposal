@@ -7,7 +7,7 @@
     .Language-dropdown {
         position: relative;
         display: inline-block;
-        margin-left: 350px;
+        margin-left: 300px;
     }
 
     p {
@@ -18,7 +18,6 @@
         width: 60px;
         height: 40px;
         border: none;
-        padding: 15px 32px;
         text-align: center;
         display: inline-block;
         font-size: 1.1rem;
@@ -28,16 +27,13 @@
         margin: 0;
         padding: 3px;
         border-radius: 3px;
-        background-color: white;
+        background-color: black;
+        color: white;
     }
 
     .Language-dropdown-button img {
         width: 20px; 
         height: 15px;
-    }
-
-    .Language-dropdown:hover .Language-dropdown-button {
-        background-color: #F8F8FF;
     }
 
     .Language-dropdown-content {
@@ -46,7 +42,7 @@
         position: absolute;
         z-index: 1;
         font-size: 1.1rem; 
-        border: 0.5px solid #DCDCDC;
+        border: 0.5px solid #66ff99;
         border-radius: 3px;
     }
 
@@ -62,16 +58,18 @@
     .Language-dropdown-content li p {
         margin-left: 5px;
         margin-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     .Language-dropdown-content img {
-        margin-top: 20px;
+        margin-top: 14px;
         width: 20px; 
         height: 15px;
     }
   
     .Language-dropdown-content li:hover {
-        background-color: #F8F8FF;
+        color: #66ff99;
     }
 </style>
 

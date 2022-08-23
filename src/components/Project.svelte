@@ -1,5 +1,5 @@
 <script>
-    let IslaImg = "https://imgs.search.brave.com/MkwMi69Ql_OzTWY5CRWgVlR0k6brPhmKAmQUE2PSB9o/rs:fit:711:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5J/SzBkUjg3YU92MGIx/SHl4TnZsNG1nSGFF/OCZwaWQ9QXBp";
+    let IslaImg = "https://freepngimg.com/download/island/14-2-island-free-download-png.png";
     
     export let name;
     export let description;
@@ -16,10 +16,11 @@
         width: 300px;
         height: 400px;
         font-size: 0.8rem;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 1px 20px 0px #66ff99;
         border-radius: 30px;
         text-align: center;
         padding: 30px;
+        color: white;
     }
 
     .Project-info {
@@ -41,7 +42,7 @@
         width: 50px;
         height: 50px;
         border-radius: 50%;
-        border: 0.5px solid #F8F8FF;
+        border: 1px solid #66ff99;
     }
 
     .Project-description {
@@ -49,7 +50,7 @@
     }
 
     .Project-repository {
-        color: darkcyan;
+        color: #66ff99;
     }
 
     .Project-balance {
@@ -92,6 +93,10 @@
         margin-bottom: 0px;
     }
 
+    .Project-land-icon {
+        background-color: black;
+    }
+
     .Project-land-icon h2 {
         margin-left: 30px;
         margin-top: 20px;
@@ -111,9 +116,10 @@
         padding: 10px 15px;
         text-align: center;
         font-size: 1rem;
-        background-color: darkcyan;
+        background-color: black;
         border-radius: 50px;
-        color: white;
+        border: 2px solid #66ff99;
+        color:#66ff99;
         font-family: 'Inter', sans-serif;
         font-weight: bold;
     }

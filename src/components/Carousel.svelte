@@ -25,11 +25,15 @@
         opacity: 1;
         }
         30% {
-        transform: translateX(-150px);
+        transform: translateX(-100px);
+        opacity: 0;
+        }
+        50% {
+        transform: translateX(-100px);
         opacity: 0;
         }
         100% {
-        transform: translateX(-150px);
+        transform: translateX(-50px);
         opacity: 0;
         }
     }

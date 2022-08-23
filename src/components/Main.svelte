@@ -7,6 +7,7 @@
 
 <style>
     .Main {
+        background-color: black;
         width: 100%;
         height: auto;
         font-size: 1.3rem;
@@ -14,6 +15,7 @@
     }
 
     .Main-section-description {
+        color: white;
         position: absolute;
         width: 800px;
         margin-top: 100px;
@@ -21,6 +23,8 @@
     }
 
     .Main-section-description h1 {
+        -webkit-text-stroke: 1px #66ff99;
+        color: black; /* width and color */
         margin: 0;
         font-size: 4rem;
         font-weight: 700;
@@ -41,9 +45,9 @@
         padding: 10px 20px;
         font-size: 1.2rem;
         font-weight: 1000;
-        color: darkcyan;
-        background-color: white;
-        border: 3px solid darkcyan;
+        color: #66ff99;
+        background-color: black;
+        border: 2px solid #66ff99;
         border-radius: 50px;
         font-family: 'Inter', sans-serif;
     }
@@ -54,22 +58,6 @@
         height: 100%;
         margin-left: 75%;
         display: flex;
-    }
-
-    .Main-section-projects-button {
-        width: 50px;
-        height: 50px;
-        display: inline-block;
-        color: darkcyan;
-        background-color: white;
-        border: 1px solid darkcyan;
-        border-radius: 50px;
-        margin-top: 60%;
-        margin-left: 50%;
-    }
-
-    .Main-section-projects-button i {
-        font-size: 1.5rem;
     }
 </style>
 
